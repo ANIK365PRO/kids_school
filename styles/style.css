@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+  font-family: 'Quicksand', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-font {
+  font-family: 'Raleway', serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 /* shared style  */
+.hide {
+  display: none;
+}
 .orange {
   color: rgb(254, 163, 1);
 }
@@ -37,6 +54,14 @@ header nav div img {
   height: 3rem; */
   object-fit: contain;
 }
+header nav div h3 {
+  color: rgb(17, 17, 17);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
 header nav div,
 ul {
   display: flex;
@@ -46,6 +71,12 @@ ul {
 header nav a {
   text-decoration: none;
   padding: 0 1.5rem;
+
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .nav_btn {
   width: 12rem;
@@ -56,6 +87,11 @@ header nav a {
   background-color: rgb(254, 163, 1);
   border: none;
   border-radius: 0.75rem;
+  color: rgb(255, 255, 255);
+
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 30px;
 }
 .nav_btn:hover {
   background-color: rgba(254, 161, 1, 0.572);
