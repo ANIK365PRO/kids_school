@@ -1,3 +1,17 @@
+/* shared style  */
+.orange {
+  color: rgb(254, 163, 1);
+}
+.sky_blue {
+  color: rgb(1, 172, 253);
+}
+.aqua {
+  color: rgb(5, 212, 223);
+}
+.purpol {
+  color: rgb(93, 88, 239);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,14 +32,32 @@ header nav {
   align-items: center;
   /* border: 1px solid rebeccapurple; */
 }
+header nav div img {
+  /* width: 4rem;
+  height: 3rem; */
+  object-fit: contain;
+}
 header nav div,
 ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
-header nav div img {
-  /* width: 4rem;
-  height: 3rem; */
-  object-fit: contain;
+header nav a {
+  text-decoration: none;
+  padding: 0 1.5rem;
+}
+.nav_btn {
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(254, 163, 1);
+  border: none;
+  border-radius: 0.75rem;
+}
+.nav_btn:hover {
+  background-color: rgba(254, 161, 1, 0.572);
+  cursor: pointer;
 }
