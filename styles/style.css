@@ -29,6 +29,17 @@
   color: rgb(93, 88, 239);
 }
 
+.heading_h2 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 60px 0 80px 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -101,7 +112,7 @@ header nav a {
 /* banner hero section  */
 .hero_section {
   /* height: 29em; */
-  border: 2px solid rgba(60, 179, 114, 0.509);
+  /* border: 2px solid rgba(60, 179, 114, 0.509); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +166,7 @@ header nav a {
   object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .hero_section {
     flex-direction: column-reverse;
   }
