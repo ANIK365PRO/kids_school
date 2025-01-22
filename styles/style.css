@@ -13,10 +13,16 @@
   font-weight: 500;
   font-style: normal;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* shared style  */
 
 .hide {
-  visibility: hidden;
   display: none;
 }
 .orange {
@@ -40,24 +46,20 @@
   line-height: 57.5px;
   letter-spacing: 0%;
   text-align: center;
-  margin: 60px 0 80px 0;
+  margin-bottom: 4rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   max-width: 1158px;
   margin: 0 auto;
 }
 header {
   max-height: 4rem;
+
   /* border: 2px solid rgb(254, 163, 1); */
-  /* padding: 0.5rem 0; */
 }
 header nav {
+  margin: 0.75rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,7 +122,7 @@ header nav a {
   display: flex;
 
   text-align: center;
-  padding: 0.5rem;
+  margin-right: 0.5rem;
 }
 /* banner hero section  */
 .hero_section {
@@ -182,13 +184,13 @@ header nav a {
 
 /* Standard_Curriculum section  */
 .Standard_Curriculum {
-  border: 2px solid rebeccapurple;
-  max-height: 760px;
+  /* border: 2px solid rebeccapurple; */
+  min-height: 760px;
   background-image: url('../assets/bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 6rem auto;
 }
 .card_container {
   display: grid;
@@ -271,7 +273,19 @@ header nav a {
   letter-spacing: 0%;
   text-align: center;
 }
+.arow_icon {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
 @media screen and (max-width: 576px) {
+  body {
+    margin: 0 1rem;
+  }
   header nav div img {
     max-width: 2.8rem;
     min-height: 2.8rem;
@@ -281,10 +295,11 @@ header nav a {
   nav aside {
     display: none;
   }
-  nav .menubar {
+  .hide {
     visibility: visible;
     display: block;
   }
+
   .hero_section {
     flex-direction: column-reverse;
   }
@@ -306,8 +321,17 @@ header nav a {
     letter-spacing: 0%;
     text-align: center;
   }
-
+  .heading_h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 40px 0;
+  }
   .card_container {
     grid-template-columns: 1fr;
+  }
+  .card h4 {
+    font-size: 1.2rem;
+  }
+  .arow_icon {
+    display: none;
   }
 }
