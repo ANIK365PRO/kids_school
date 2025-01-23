@@ -40,7 +40,6 @@
 
 .heading_h2 {
   color: rgb(0, 0, 0);
-  font-family: Quicksand;
   font-size: 2.8rem;
   font-weight: 700;
   line-height: 57.5px;
@@ -125,6 +124,9 @@ header nav a {
   margin-right: 0.5rem;
 }
 /* banner hero section  */
+body section {
+  margin-bottom: 3rem;
+}
 .hero_section {
   /* height: 29em; */
   /* border: 2px solid rgba(60, 179, 114, 0.509); */
@@ -185,12 +187,11 @@ header nav a {
 /* Standard_Curriculum section  */
 .Standard_Curriculum {
   /* border: 2px solid rebeccapurple; */
-  min-height: 760px;
+  min-height: 700px;
   background-image: url('../assets/bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 6rem auto;
 }
 .card_container {
   display: grid;
@@ -239,7 +240,7 @@ header nav a {
 #middle_color {
   background: linear-gradient(
       180deg,
-      rgb(238, 225, 255),
+      rgba(238, 225, 255, 0.856),
       rgba(255, 255, 255, 0) 40%
     ),
     rgba(255, 255, 255, 0.479);
@@ -281,6 +282,134 @@ header nav a {
   align-items: center;
   margin: 0 auto;
   gap: 1rem;
+}
+
+/* start our stories section  */
+.our_stories {
+  background: url('../assets/bg.png'),
+    linear-gradient(
+      0deg,
+      rgba(254, 161, 1, 0.363),
+      rgba(255, 255, 255, 0.404) 100%
+    );
+
+  /* border: 2px solid rebeccapurple; */
+  min-height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our_stories_card_container {
+  display: flex;
+  gap: 19px;
+}
+.lift_card {
+  /* Article */
+  position: relative;
+  border: 1px solid maroon;
+  position: relative;
+  max-width: 540.27px;
+  height: 630.52px;
+  border-radius: 16px;
+
+  background: rgb(255, 255, 255);
+}
+.lift_card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.lift_card figcaption {
+  margin: 50px 36px 0 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.2rem;
+}
+.left_absolute_btn {
+  /* November 19, 2019 */
+  position: absolute;
+  width: 174.51px;
+  height: 47.93px;
+  left: 38.35px;
+  top: 314.14px;
+  border-radius: 47px 10px 47px 10px;
+  border: none;
+  background: rgb(60, 216, 232);
+
+  color: rgb(255, 255, 255);
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.left_absolute_btn:hover {
+  background: rgba(60, 215, 232, 0.904);
+}
+.lift_card_h4 {
+  color: rgb(0, 0, 0);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 38.35px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.right_grid {
+  /* border: 1px solid maroon; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px;
+}
+.grid_card {
+  position: relative;
+  /* border: 2px solid red; */
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  height: 302px;
+}
+
+.grid_card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.absolute_btn {
+  position: absolute;
+  width: 174.51px;
+  height: 38.35px;
+  left: 38.35px;
+  top: 157.81px;
+  border-radius: 47px 10px 47px 10px;
+  border: none;
+  background: rgb(149, 178, 38);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+
+  text-transform: capitalize;
+}
+.absolute_btn:hover {
+  background: rgba(150, 178, 38, 0.719);
+}
+.grid_card figcaption {
+  padding: 37px;
+}
+.grid_card figcaption p {
+  color: rgb(0, 0, 0);
+  font-size: 15.34px;
+  font-weight: 700;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 @media screen and (max-width: 576px) {
   body {
@@ -331,7 +460,8 @@ header nav a {
   .card h4 {
     font-size: 1.2rem;
   }
-  .arow_icon {
+  .arow_icon,
+  .lift_card {
     display: none;
   }
 }
