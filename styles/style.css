@@ -294,10 +294,11 @@ body section {
     );
 
   /* border: 2px solid rebeccapurple; */
-  min-height: 700px;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
 }
 .our_stories_card_container {
   display: flex;
@@ -309,7 +310,7 @@ body section {
   border: 1px solid maroon;
   position: relative;
   max-width: 540.27px;
-  height: 630.52px;
+  max-height: 630.52px;
   border-radius: 16px;
 
   background: rgb(255, 255, 255);
@@ -365,13 +366,14 @@ body section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 19px;
+  margin: 0 1rem;
 }
 .grid_card {
   position: relative;
   /* border: 2px solid red; */
   border-radius: 16px;
   background: rgb(255, 255, 255);
-  height: 302px;
+  max-height: 302px;
 }
 
 .grid_card img {
@@ -407,7 +409,7 @@ body section {
   color: rgb(0, 0, 0);
   font-size: 15.34px;
   font-weight: 700;
-  line-height: 28.76px;
+  /* line-height: 28.76px; */
   letter-spacing: 0%;
   text-align: left;
 }
@@ -463,5 +465,20 @@ body section {
   .arow_icon,
   .lift_card {
     display: none;
+  }
+
+  .absolute_btn {
+    width: 103.91px;
+    height: 22.83px;
+    left: 22.83px;
+    top: 93.96px;
+
+    font-size: 10px;
+
+    line-height: 17px;
+  }
+  .grid_card figcaption p {
+    font-size: 9.13px;
+    line-height: 17.12px;
   }
 }
